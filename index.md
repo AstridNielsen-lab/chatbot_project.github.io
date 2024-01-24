@@ -1,4 +1,4 @@
-# Projeto de Chatbot usando modelos GPT-2 🤖
+# Projeto de Chatbot usando modelos GPT-2 🤖index md
 
 Este projeto implementa um chatbot interativo usando modelos GPT-2 para geração de linguagem natural. Explore conversas envolventes e contribua para o desenvolvimento deste chatbot inteligente. 🚀
 
