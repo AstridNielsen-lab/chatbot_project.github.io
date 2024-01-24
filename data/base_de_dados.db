@@ -1,0 +1,18 @@
+import sqlite3
+
+# Conectar ao banco de dados (se não existir, será criado)
+conn = sqlite3.connect('data/base_de_dados.db')
+c = conn.cursor()
+
+# Criar uma tabela para armazenar as interações do chat
+c.execute('''
+          CREATE TABLE IF NOT EXISTS chat_history (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              user_input TEXT,
+              response TEXT
+          )
+          ''')
+
+# Commit para salvar as alterações e fechar a conexão
+conn.commit()
+conn.close()
