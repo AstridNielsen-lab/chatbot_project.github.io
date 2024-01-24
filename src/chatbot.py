@@ -4,8 +4,11 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import numpy as np
 from keras.models import load_model  # Corrigindo a importação
+from kivy.lang import Builder
 
 import os
+
+Builder.load_file('/main.kv')
 
 # Certifique-se de baixar o recurso necessário para a tokenização
 nltk.download('punkt')
